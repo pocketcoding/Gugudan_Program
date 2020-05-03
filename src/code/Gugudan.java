@@ -3,6 +3,27 @@ package code;
 import java.util.Scanner;
 
 public class Gugudan {
+	
+	public static int[] calculate(int times)
+	{
+		int[] result = new int[9];
+		
+		for(int i = 0; i < result.length; i++)
+		{
+			result[i] = times * (i + 1);
+		}
+		
+		return result;
+	}
+	
+	public static void print(int[] result)
+	{
+		for(int i = 0; i < result.length; i++)
+		{
+			System.out.println(result[i]);
+		}
+	}
+	
 
 	public static void main(String[] args)
 	{
@@ -85,6 +106,29 @@ public class Gugudan {
 				System.out.println(result[k] + " x " + r + " = " + result[k] * r);
 			}
 		}
+		
+		System.out.println("----------- End of step 4 ----------"); // divider
+		
+		
+		// Step 5 : method -> printing any number times table
+		
+		// printing 2 times table
+		int[] result2 = calculate(2);
+		print(result2);
+		
+		System.out.println("---------------------"); // divider
+		
+		// printing 2 ~ 9 times table
+		for(int y = 2; y <= 9; y++)
+		{
+			int[] result3 = calculate(y);
+			print(result3);
+		}
+		
+		System.out.println("----------- End of step 5 ----------"); // divider
+		
+		
+		
 		
 		
 	}
