@@ -19,5 +19,4 @@ Java Beginner practice for Gugudan program
 ## step 4
 - goal : to print any number times table (console mode)
 - how : printing 2~9 times table using array
-- concept : array
- - int[] array = new int[9]
+- concept : int[] array = new int[9]
