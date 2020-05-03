@@ -6,7 +6,7 @@ public class Gugudan {
 
 	public static void main(String[] args)
 	{
-		// any number times table
+		// Step 1 : any number times table
 		System.out.print("What number for times table? : ");
 		
 		Scanner scan = new Scanner(System.in);
@@ -25,7 +25,8 @@ public class Gugudan {
 		
 		System.out.println("----------- End of step 1 ----------"); // divider
 		
-		// 'while' looping statement -> printing 6 times table
+		
+		// Step 2 : 'while' looping statement -> printing 6 times table
 		
 		int number6 = 6;
 		int i = 1;
@@ -45,7 +46,8 @@ public class Gugudan {
 		
 		System.out.println("----------- End of step 2 ----------"); // divider
 		
-		// 'if' conditional statement -> printing any number times table
+		
+		// Step 3 : 'if' conditional statement -> printing any number times table
 		
 		System.out.print("What number for times table? : ");
 		scan = new Scanner(System.in);
@@ -69,6 +71,20 @@ public class Gugudan {
 		}
 		
 		System.out.println("----------- End of step 3 ----------"); // divider
+		
+		
+		// Step 4 : array -> printing 2 ~ 9 times table
+		
+		int[] result = new int[9];
+		for(int k = 0; k < result.length - 1; k++)
+		{
+			result[k] = k + 2;
+			
+			for(int r = 1; r < 10; r++)
+			{
+				System.out.println(result[k] + " x " + r + " = " + result[k] * r);
+			}
+		}
 		
 		
 	}
