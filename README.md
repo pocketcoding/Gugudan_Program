@@ -20,3 +20,13 @@ Java Beginner practice for Gugudan program
 - goal : to print any number times table (console mode)
 - how : printing 2~9 times table using array
 - concept : int[] array = new int[9]
+
+## step 5
+- goal : using 'method' to print out any number times table (console mode)
+- how : take the repeated codes and make them methods
+- concept : public static void/int[] calculate(int[] times)/print(int[] result)
+
+## step 6 (final)
+- goal : using 'class' to divide the one file into two
+- how : create a [main] file (GugudanMain.java) and a class file (Gugudan.java)
+- concept : class.
